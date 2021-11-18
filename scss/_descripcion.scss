@@ -1,0 +1,47 @@
+@import "variables";
+
+.contDescripcion{
+    width: 100%;
+    padding: 60px 10px;
+    background: $colorVino;
+    .titleM{
+        color: yellow;
+        //background: yellowgreen;
+        margin-left: 30px;
+    }
+    .contenido{
+        width: 100%;
+        padding: 5px 0px;
+        //background: yellowgreen;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .cont1{
+            width: auto;
+            padding: 5px 0px;
+            //background: orange;
+            text-align: justify;
+            color: yellow;
+            .hiper{
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+            }
+        }
+        .cont2{
+            width: auto;
+            padding: 5px 0px;
+            //background: orange;
+            text-align: justify;
+            color: yellow;
+            .hipe2{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+            }
+        }
+    }
+}

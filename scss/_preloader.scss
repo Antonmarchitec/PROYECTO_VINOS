@@ -1,0 +1,27 @@
+.loader{
+    width: 100%;
+    height: 100vh;
+    background: #57010183;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cargaText{
+        position: absolute;
+        top: 310px;
+        color: white;
+    }
+}
+.loaderJS{
+    animation: preloader 1s forwards;
+}
+@keyframes preloader {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+

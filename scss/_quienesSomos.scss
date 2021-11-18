@@ -1,0 +1,128 @@
+@import "variables";
+.cont_quienesSomos{
+    margin-top:50px;
+    width:100%;
+    padding: 60px 0px;
+    background: $colorVino;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .descripcion{
+        width: 500px;
+        padding: 20px 0px;
+        //background: violet;
+        padding: 5px;
+        .title{
+          font-size: 50px;
+          color: rgb(235, 235, 82);
+        }
+        .parrafo{
+          color: white;
+          text-align: justify;
+        }
+        .boton{
+            margin-top: 10px;
+            width: 150px;
+            padding: 5px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background:$colorBlck ;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s all;
+        }
+        .boton:hover{
+            background: white;
+            color: black;
+        }
+    }
+    @media(min-width:980px) and (max-width:1152px){
+        .descripcion{
+            width: 420px;
+            //background: yellow;
+        }
+    }
+    @media(min-width:320px) and (max-width:979px){
+        .descripcion{
+            width: 100%;
+            //background: yellow;
+            padding: 0px 20px;
+        }
+    }
+
+    .contSladerBase{
+        width:600px;
+        height: 300px;
+        //background-image: url(../source/botellas.png);
+        //background-size: 100% 100%;
+        //background: rgba(64, 224, 208, 0.753);
+        position: relative;
+        overflow:hidden;
+        .contSlader{
+            width: 300%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            //background:rgba(37, 37, 37, 0.267);
+            
+            .image_element{
+                width: 100%;
+                height: 300px;
+                //background: rgba(44, 42, 42, 0.315);
+                text-align: center;
+                color: cornsilk;
+            }
+        }
+        .btnLeft{
+            //display:block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            //background: rgb(226, 225, 225);
+            position: absolute;
+            left: 0;
+            top:calc(50% - 20px);
+            cursor: pointer;
+            .iconArrow{
+                font-size: 35px;
+                color: white;
+            }
+        }
+        .btnRight{
+            //display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            //background: rgb(219, 219, 219);
+            right: 0;
+            top:calc(50% - 20px);
+            cursor: pointer;
+            .iconArrow{
+                font-size: 35px;
+                color: white;
+            }
+        }
+    }
+    @media(min-width:980px) and (max-width:1152px){
+        .contSladerBase{ 
+            width: 500px;
+            height: 300px;
+            //background: yellowgreen;
+        }
+    }
+    @media(min-width:320px) and (max-width:979px){
+        .contSladerBase{ 
+            margin: 40px auto;
+            width: 100%;
+            height: 300px;
+            //background: yellowgreen;
+        }
+    }
+}

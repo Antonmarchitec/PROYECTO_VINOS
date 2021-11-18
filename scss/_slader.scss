@@ -1,0 +1,52 @@
+@import "variables";
+
+.contSlader{
+    margin-top: 50px;
+    width: 100%;
+    //padding: 5px 0px;
+    //background: limegreen;
+    position: relative;
+    overflow: hidden;
+    .contSladerBase{
+        width: 300%;
+        height: 450px;
+        //background:rebeccapurple ;
+        display: flex;
+        flex-direction: row;
+        
+        .contSlader_cuadroImg1{
+            width: 100%;
+            height: 450px;
+            background-image: url(../source/slader1.jpg);
+            background-size:cover;
+        }
+        .contSlader_cuadroImg2{
+            width: 100%;
+            height: 450px;
+            background-image: url(../source/slader2.jpg);
+            background-size:cover;
+            
+        }
+        .contSlader_cuadroImg3{
+            width: 100%;
+            height: 450px;
+            background-image: url(../source/slader3.jpg);
+            background-size:cover;
+
+        }
+    }
+    .prew{
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        font-size: 30px;
+        color: $colorBlanco;
+    }
+    .next{
+        position: absolute;
+        top: 200px;
+        right: 20px;
+        font-size: 30px;
+        color: $colorBlanco;
+    }
+}

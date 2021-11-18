@@ -1,0 +1,203 @@
+@import "variables";
+.imgCarrito{
+    width: 50px;
+    height: 50px;
+    background: rgb(29, 29, 29);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    cursor: pointer;
+    transition: .1s all;
+    .iconCarrito{
+        font-size: 20px;
+        color: rgb(211, 211, 211);
+      
+        .text{
+            color: white;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+    }
+}
+.imgCarritoJS{
+   //right: 0;
+}
+
+
+
+.contBasePedido{
+    width:360px;
+    padding:3px;
+    background:$colorVinoTransparente;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    //color: $colorBlck;
+    position: fixed;
+    top: 200px;
+    left:-100%;
+    //right:-100%;
+    transition: 0.2s linear;
+    opacity:0;
+    .contenedorPedidos{
+        width: 100%;
+        background:$colorVinoTransparente;
+        border-radius: 5px;
+        .tabla{   
+            width: 100%;
+            //background:greenyellow;
+            border-radius: 5px;
+            .fila{   //----> este es el <tr>
+                color: white;   
+                .col_title{
+                    width: 130px;
+                    text-align: center;
+                    font-size: 12px;
+                    padding: 5px 0px;
+                    background:$colorVino;
+                    //background: $colorVino; 
+                    //background: rebeccapurple;
+                }
+                .col_name{
+                   width:70px;
+                   font-size: 10px;
+                   padding: 3px;
+                   background:rgba(88, 52, 54, 0.781);   
+                }
+                .col_cant{
+                    width: 80px;
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 3px 5px;
+                    background:rgba(88, 52, 54, 0.781);   
+                     
+                }
+                .col_tipo{
+                    width: 55px;
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 3px 5px;
+                    background:rgba(88, 52, 54, 0.781);   
+                   
+                }
+                .col_total{
+                    width: 62px;
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 3px 5px;
+                    background:rgba(88, 52, 54, 0.781);   
+                   
+                }
+               .col_icon{
+                    background:rgba(88, 52, 54, 0.781);   
+                    text-align: center;
+                    padding: 3px 0px;
+               }
+            }
+          
+           
+        }
+           
+        .contBotones{
+            width: 100%;
+            padding: 5px 0px;
+            display: flex;
+            justify-content: space-around;
+            .boton{
+                padding: 5px 30px;
+                background: rgb(255, 255, 255);
+                color: $colorVino;
+                border: 2px solid $colorVino;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .boton:hover{
+                background: $colorVino;
+                color: white;
+                box-shadow: 0px 2px 2px grey;
+            }
+        }
+    }
+
+    .totales{
+        width: 100%;
+        height: 20px;
+        //background: yellow;
+        .contNombre{
+            width: 70px;
+            padding: 1px 0px;
+            //background: chartreuse;
+            float: left;
+            .NombreCantidad{
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        .totalCantidad{
+            //background: chartreuse;
+            float: left;
+            margin-left: 55px;
+            font-size: 14px;
+        }
+        
+        .totalTotales{
+            //background: crimson;
+            float: right;
+            margin-right: 70px;
+            font-size: 14px;
+        }
+    }
+ 
+}
+.contBasePedidoJS{
+    left: 0;
+    opacity: 1;
+}   
+
+.carroVacio{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+.btnTop{
+    width: 40px;
+    height: 40px;
+    background: $colorVino;
+    border:1px solid $colorBlanco;
+    box-shadow: 0px 2px 2px white;
+    border-radius: 5px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    transition: 0.5s all;
+    .iconTop{
+        font-size: 30px;
+        color: white;
+    }
+}
+
+.btnTopJS{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

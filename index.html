@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburguers.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="CONTAINER" id="container">
+
+        
+
+        <!--PRELOADER--------------------------------------->
+        <div class="loader" id="loader">
+            <img src="source/preloader.gif">
+            <p class="cargaText">Cargando...</p>
+        </div>
+
+         <!--HEADER---------------------------------------->
+        <div class="HEADER" >
+            <div class="containerHeader" id="containerHeader">
+                <div class="containerLogo">
+                    <!--<i class="iconLogo fas fa-air-freshener"></i>-->
+                    <h2 class="iconLogo">Carrito<br>de compras</h2>
+                </div>
+
+               
+
+                <div class="btnResponsive" id="btnResponsive">
+                    <button class="hamburger hamburger--minus" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>   
+                    <!--<i class="iconResponsive fas fa-bars" id="iconResponsive"><span class="btnRText"> Categorias </span></i>-->
+                </div>
+
+                <div class="containerHeaderTopC2" id="containerHeaderTopC2">
+                    <nav class="nav">
+                        <ul class="ul">
+                            <li class="li"><a href="#QUIENES_SOMOS" class="link">QUIENES<br>SOMOS</a></li>
+                            <li class="li"><a href="#UNIDAD" class="link">COMPRA POR<br> UNIDAD</a></li>
+                            <li class="li"><a href="#PAQUETE" class="link">COMPRA POR<br> PAQUETE</a></li>
+                            <li class="li"><a href="#GALONES" class="link">COMPRA POR<br> GALON</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div>   
+        </div>   
+
+         <!--QUIENES SOMOS---------------------------------------->
+        <div class="QUIENES_SOMOS" id="QUIENES_SOMOS">
+            <div class="cont_quienesSomos">
+                <div class="descripcion">
+                    <h2 class="title">Acerca de</h2>
+                    <p class="parrafo">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Tempore atque nemo velit quidem consequatur, repellendus,
+                         ullam qui nostrum cupiditate dolore doloribus dolor eaque
+                         . Perspiciatis cumque architecto ab veniam laborum et?
+                         ullam qui nostrum cupiditate dolore doloribus dolor eaque
+                         . Perspiciatis cumque architecto ab veniam laborum et?
+                    </p>
+                    <a href="#"><button class="boton"> Contacto </button></a>
+                </div>
+
+                <div class="contSladerBase">
+                    <div class="contSlader" id="contSlader">
+                        <div class="image_element">
+                          <img src="source/slader1.jpg" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                        <div class="image_element">
+                          <img src="source/botellas_vino.png" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                        <div class="image_element">
+                          <img src="source/botellas.png" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="btnLeft" id="btnLeft">
+                        <i class="iconArrow fas fa-angle-double-left"></i>
+                    </div>
+                    <div class="btnRight" id="btnRight">
+                        <i class="iconArrow fas fa-angle-double-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--SECCION---------------------------------------->
+        <div class="SECTION" id="contenedor-productos">
+            <div class="contGeneralSection">
+                <h1 class="titleM" id="UNIDAD">¡Unidades!</h1>
+                <div class="containerSection" id="containerSection1">
+
+                </div>
+            </div>
+            <div class="contGeneralSection">
+                <h1 class="titleM" id="PAQUETE">¡Paquetes!</h1>
+                <div class="containerSection" id="containerSection2">
+
+                </div>
+            </div>
+            <div class="contGeneralSection">
+                <h1 class="titleM" id="GALONES">¡Galones!</h1>
+                <div class="containerSection" id="containerSection3">
+
+                </div>
+            </div>
+        </div>
+
+        <template id="template-productos">
+            <div class="containerSectionCuadroBase"id="imgUnidad1">
+                <div class="containerSectionCuadro" >
+                    <h2 class="vinoTitle">Vino dulce</h2>
+                    <div class="contPrecio">
+                        50 Bs
+                    </div>
+                    <div class="contDescription" id="contDescription1">
+                        <p class="contDescriptionTexto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                        </p>             
+                    </div>
+                    <div class="selectores">
+                        <h2 class="title">Cantidad</h2>
+                            <div class="contCount">
+                                <div class="anterior">
+                                    <i class="iconS fas fa-chevron-circle-left" id="anterior4"></i>
+                                </div>
+                                <div class="date" id="dato4">1</div>
+                                <div class="siguiente">
+                                    <i class="iconS fas fa-chevron-circle-right" id="siguiente4"></i>
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <button class="btn_guardarVino" id="btnGuardarVinos"> Agregar al carrito </button>    
+                </div>
+                <div class="contFicha" id="contFicha1">
+                    <h2 class="textComprar" id="textComprar">Comprar</h2>
+                </div>   
+            </div>
+           
+            
+                <div class="containerSectionCuadroBase" id="imgUnidad5">
+                    <div class="containerSectionCuadro" >
+                        <h2 class="vinoTitle">Vino dulce</h2>
+                        <div class="contPrecio">
+                            50 Bs
+                        </div>
+                        <div class="contDescription" id="contDescription1">
+                            <p class="contDescriptionTexto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                            </p>
+                        </div>
+                        <div class="selectores">
+                            <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior4"></i>
+                                    </div>
+                                    <div class="date" id="dato4">1</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente4"></i>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <button class="btn_guardarVino" id="btnGuardarVinos"> Agregar al carrito </button>
+                    </div>
+                    <div class="contFicha" id="contFicha1">
+                        <h2 class="textComprar" id="textComprar">Comprar</h2>
+                    </div>           
+                </div> 
+                
+                <div class="containerSectionCuadroBase" id="imgUnidad9">
+                    <div class="containerSectionCuadro" >
+                        <h2 class="vinoTitle">Vino dulce</h2>
+                        <div class="contPrecio">
+                            50 Bs
+                        </div>
+                        <div class="contDescription" id="contDescription1">
+                            <p class="contDescriptionTexto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                            </p>
+                        </div>
+                        <div class="selectores">
+                            <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior4"></i>
+                                    </div>
+                                    <div class="date" id="dato4">1</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente4"></i>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <button class="btn_guardarVino" id="btnGuardarVinos"> Agregar al carrito </button>
+                    </div>
+                    <div class="contFicha" id="contFicha1">
+                        <h2 class="textComprar" id="textComprar">Comprar</h2>
+                    </div>           
+                </div> 
+              
+        </template>
+
+         <!--DESCRIPCION---------------------------------------->
+        <div class="DESCRIPCION">
+            <div class="contDescripcion">
+                <h1 class="titleM" id="DESCRIPCION">¡Pasos de fabricación!</h1>
+                <div class="contenido">
+                    <div class="cont1">
+                        1.- <a href="#" class="hiper"> Cuidado de la uva en viñedo.</a><br>
+                        2- <a href="#" class="hiper">Vendimia.</a><br>
+                        3- <a href="#" class="hiper">Despalillado.</a><br>
+                        4- <a href="#" class="hiper">Estrujado de la uva.</a><br>
+                        5- <a href="#" class="hiper">Maceración.</a><br>
+                        6- <a href="#" class="hiper">Fermentación alcohólica.</a>
+                    </div>
+                    <div class="cont1">
+                        7- <a href="#" class="hiper">Prensado de las uvas.</a><br>
+                        8- <a href="#" class="hiper">Fermentación maloláctica.</a><br>
+                        9- <a href="#" class="hiper">Crianza del vino.</a><br>
+                        10- <a href="#" class="hiper">Trasiegos entre barricas.</a><br>
+                        11- <a href="#" class="hiper">Clarificación.</a><br>
+                        12- <a href="#" class="hiper">Embotellado.</a>
+                    </div>
+                    <div class="cont2">
+                        <i class="fas fa-chevron-right"></i> <a href="#" class="hipe2">Historia del vino en america.</a><br>
+                        <i class="fas fa-chevron-right"></i> <a href="#" class="hipe2">Vinos tintos.</a><br>
+                        <i class="fas fa-chevron-right"></i> <a href="#" class="hipe2">Vinos Blancos.</a><br>
+                        <i class="fas fa-chevron-right"></i> <a href="#" class="hipe2">Historia del vino en Bolivia.</a><br>
+                        <i class="fas fa-chevron-right"></i> <a href="#" class="hipe2">Comercio.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <!--ICONO DEL CARRITO---------------------------------------->
+        <div class="imgCarrito" id="imgCarrito">
+            <i class="iconCarrito fas fa-cart-arrow-down"></i>
+        </div>
+
+         <!--CUADRO CARRITO DE COMPRAS---------------------------------------->
+         <div class="contBasePedido" id="contBasePedido">
+            <div class="contenedorPedidos" id="contenedorPedidos">
+                <table class="tabla">
+                    <tr class="fila">
+                        <td class="col_title" colspan="5">DETALLE DE COMPRA</td>
+                    </tr>
+                   
+                    <tr class="fila">
+                        <td class="col_title">NOMBRE</td>
+                        <td class="col_title">CANTIDAD</td>
+                        <td class="col_title">TIPO</td>
+                        <td class="col_title">TOTAL</td>  
+                        <td class="col_title">QUITAR</td> 
+                    </tr>
+                </table>
+
+                <table class="tabla" id="items">
+                    <tr id="footer-carrito">
+                        <th scope="row" colspan="5" class="carroVacio">Selecciona tu compra</th>
+                    </tr>
+                </table>
+                
+                <table class="tabla"  id="tota" >
+
+                </table>
+                
+            </div> 
+            
+         </div>
+
+         <template id="template-carrito">
+            <tr class="fila">
+                <td class="col_name">V. DULCE</td>
+                <td class="col_cant">0</td>
+                <td class="col_tipo">Unidad</td>
+                <td class="col_total">0</td>
+                <td class="col_icon"><a href="#"><img src="source/iconoX.png" alt="iconX" width="45%" height="45%" class="image" id="eliminar"></a></td>
+                <!--<button  class="delete">eliminar</button>--> 
+            </tr>
+        </template>
+
+        <template id="template-footer">
+            <table>
+                <tr class="fila">
+                    <td class="col_name">Totales</td>
+                    <td class="col_cant" id="col_cant"></td>
+                    <td class="col_tipo"></td>
+                    <td class="col_total" id="col_total"></td>
+                    <td class="col_icon"></td>
+                </tr>
+            </table>
+            
+            
+            <div class="contBotones">
+                <button class="boton" id="vaciar-carrito">
+                    Limpiar carrito
+                </button>
+                <button class="boton" id="enviarWhat">
+                    Enviar pedido
+                </button>
+            </div>
+            <!--
+              <td class="col_title">Totales</td>
+            <td class="col_title">10</td>
+            <td class="col_title">0</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+                <button class="boton" id="enviarWhat">
+                    Enviar
+                </button>
+            </td>
+            -->    
+        </template>
+
+
+        <!--FOOTER PIE DE PAGINA---------------------------------------->
+        <div class="FOOTER">
+            <div class="containerFooter">
+                <div class="cajaFooter1">
+                    <div class="red">
+                        <a href=""><i class="iconRed fab fa-whatsapp-square"></i></a>
+                    </div>
+                    <div class="red">
+                        <a href=""><i class="iconRed fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="red">
+                        <a href=""><i class="iconRed fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="cajaFooter2">
+                    <h2 class="derechos">Derechos reservados</h2>
+                    <p class="autores">
+                        || Antonio Ponce - FrontEnd<br>
+                         Weimar Cardozo - BackEnd ||
+                    </p>
+                </div>
+                <div class="cajaFooter3">
+                    <h2 class="grupotext">¡Grupo de desarrollo <br>Tienda online - carrito de compras!</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--BOTON FIJADO SUBIR---------------------------------------->
+        <a href="#container">
+            <div class="btnTop" id="btnTop">
+                <i class="iconTop fas fa-angle-double-up"></i> 
+            </div>
+        </a>
+
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="js/selectores.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/fichas.js"></script>
+    <script src="js/hamburguers.js"></script>
+    <script src="js/btnResponsive.js"></script>
+    <script src="js/btnTop.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/image_fondo.js"></script>
+    <script src="js/galeria.js"></script>
+</body>
+</html>

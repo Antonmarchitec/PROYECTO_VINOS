@@ -1,0 +1,98 @@
+[
+    {
+      "precio": 20,
+      "id": 1,
+      "estado": 1,
+      "tipo": "Unidad",
+      "title": "Dulce Oporto",
+      "thumbnailUrl": "https://scontent.fsrz4-1.fna.fbcdn.net/v/t39.30808-6/220209301_114452267575879_1221865578095301794_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=c4c01c&_nc_ohc=RN6jeQsR8-UAX_cnZP3&_nc_ht=scontent.fsrz4-1.fna&oh=c0d103a656d39094905747327eba52b9&oe=613D0378"
+    },
+    {
+      "precio": 20,
+      "id": 2,
+      "estado": 1,
+      "tipo": "Unidad",
+      "title": "Oporto Semi-Dulce",
+      "thumbnailUrl": "https://scontent.fsrz4-1.fna.fbcdn.net/v/t39.30808-6/220396552_114452334242539_6836989632261947338_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=c4c01c&_nc_ohc=F9XS5Tr0qOAAX-FG7Bb&_nc_ht=scontent.fsrz4-1.fna&oh=701c4328dc7ae5cb75533345307b139c&oe=613BB033"
+    },
+    {
+      "precio": 20,
+      "id": 3,
+      "estado": 1,
+      "tipo": "Unidad",
+      "title": "Patero Semi-Dulce",
+      "thumbnailUrl": "https://scontent.fsrz4-1.fna.fbcdn.net/v/t39.30808-6/218893507_114452620909177_1148466001985431623_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=c4c01c&_nc_ohc=3n75ILcPCCEAX8tHrZG&_nc_ht=scontent.fsrz4-1.fna&oh=e5a8fea8a1482f68d4018ab9480e5176&oe=613D4729"
+    },
+    {
+      "precio": 20,
+      "id": 4,
+      "estado": 1,
+      "tipo": "Unidad",
+      "title": "Patero Blanco",
+      "thumbnailUrl": "https://scontent.fsrz4-1.fna.fbcdn.net/v/t39.30808-6/218647420_114374314250341_7072604905572995903_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=c4c01c&_nc_ohc=iwKpWfZkloMAX_lhGSu&_nc_ht=scontent.fsrz4-1.fna&oh=776eb0aea01f65418772473429053a26&oe=613C380C"
+    },
+    {
+      "precio": 100,
+      "id": 5,
+      "estado": 2,
+      "tipo": "Paquete",
+      "title": "Dulce Oporto",
+      "thumbnailUrl": "https://picsum.photos/id/40/600"
+    },
+    {
+      "precio": 100,
+      "id": 6,
+      "estado": 2,
+      "tipo": "Paquete",
+      "title": "Oporto Semi-Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 100,
+      "id": 7,
+      "estado": 2,
+      "tipo": "Paquete",
+      "title": "Patero Semi-Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 100,
+      "id": 8,
+      "estado": 2,
+      "tipo": "Paquete",
+      "title": "Patero Blanco",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 120,
+      "id": 9,
+      "estado": 3,
+      "tipo": "Galon",
+      "title": "Oporto Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 120,
+      "id": 10,
+      "estado": 3,
+      "tipo": "Galon",
+      "title": "Oporto Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 120,
+      "id": 11,
+      "estado": 3,
+      "tipo": "Galon",
+      "title": "Oporto Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+      "precio": 120,
+      "id": 12,
+      "estado": 3,
+      "tipo": "Galon",
+      "title": "Oporto Dulce",
+      "thumbnailUrl": "https://picsum.photos/id/50/600"
+    }
+  ]
