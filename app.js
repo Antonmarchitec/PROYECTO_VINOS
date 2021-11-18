@@ -178,7 +178,7 @@ const pintarFooter = () =>{
     footer.innerHTML =''
 
     if(Object.keys(carrito).length === 0){
-        footer.innerHTML = '<th scope="row" colspan="5" class="carroVacio">Selecciona tu compra</th>'
+        footer.innerHTML = '<th scope="row" colspan="5" class="carroVacio">Carrito vacio</th>'
         return
     }
     const template = document.querySelector('#template-footer').content

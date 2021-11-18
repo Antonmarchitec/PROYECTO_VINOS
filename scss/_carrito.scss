@@ -33,7 +33,7 @@
 .contBasePedido{
     width:360px;
     padding:3px;
-    background:$colorVino;
+    background:white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px black;
     //color: $colorBlck;
@@ -45,7 +45,7 @@
     opacity:0;
     .contenedorPedidos{
         width: 100%;
-        background:$colorVinoTransparente;
+        background:transparent;
         border-radius: 5px;
         .tabla{   
             width: 100%;
@@ -63,38 +63,38 @@
                     //background: rebeccapurple;
                 }
                 .col_name{
-                   width:70px;
+                   width:72px;
                    font-size: 10px;
                    padding: 3px;
-                   background:rgba(88, 52, 54, 0.781);   
+                   background:rgb(124, 76, 79);   
                 }
                 .col_cant{
                     width: 80px;
                     text-align: center;
                     font-size: 10px;
                     padding: 3px 5px;
-                    background:rgba(88, 52, 54, 0.781);   
+                    background:rgb(124, 76, 79);   
                      
                 }
                 .col_tipo{
-                    width: 55px;
+                    width: 57px;
                     text-align: center;
                     font-size: 10px;
                     padding: 3px 5px;
-                    background:rgba(88, 52, 54, 0.781);   
+                    background:rgb(124, 76, 79);   
                    
                 }
                 .col_total{
-                    width: 62px;
+                    width: 64px;
                     text-align: center;
                     font-size: 10px;
                     padding: 3px 5px;
-                    background:rgba(88, 52, 54, 0.781);   
+                    background:rgb(124, 76, 79);   
                    
                 }
                .col_icon{
-                    background:rgba(88, 52, 54, 0.781);   
-                    text-align: center;
+                background:rgb(124, 76, 79);   
+                text-align: center;
                     padding: 3px 0px;
                }
             }
@@ -108,9 +108,9 @@
             display: flex;
             justify-content: space-around;
             .boton{
-                padding: 5px 30px;
-                background: rgb(255, 255, 255);
-                color: $colorVino;
+                padding: 3px 20px;
+                background: $colorVino;
+                color: white;
                 border: 2px solid $colorVino;
                 border-radius: 5px;
                 cursor: pointer;
@@ -118,7 +118,7 @@
             .boton:hover{
                 background: $colorVino;
                 color: white;
-                box-shadow: 0px 2px 2px grey;
+                box-shadow: 0px 2px 2px $colorVino;
             }
         }
     }
@@ -159,7 +159,7 @@
 }   
 
 .carroVacio{
-    color: white;
+    color: $colorVino;
     font-size: 12px;
 }
 
