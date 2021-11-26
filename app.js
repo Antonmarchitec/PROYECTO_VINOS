@@ -1,10 +1,4 @@
-let carrito={}
-document.addEventListener("DOMContentLoaded", ()=>{
-    baseDato()
-})
-
-
-const baseDato = async()=>{
+const baseDato = async() =>{
     try {
         const res = await fetch('api.json')
         const data = await res.json()
@@ -13,69 +7,75 @@ const baseDato = async()=>{
         //BotonesCarrito(data)    
         detectarBotones(data)
         //detectarCantidad(data)
-        
-                
+
     } catch (error) {
         console.log(error)
     }
 }
     
 
+let carrito = {}
+document.addEventListener("DOMContentLoaded", () =>{
+    baseDato()
+})
+
+
+
 const PintarProductos = (data)=>{
     const contenedorProductos = document.querySelector('#containerSection1')
     const contenedorProductos2 = document.querySelector('#containerSection2')
     const contenedorProductos3 = document.querySelector('#containerSection3')
-    const template = document.querySelector('#template-productos')
-    const fragment = document.createDocumentFragment()
+    const template  = document.querySelector('#template-productos').content
+    const fragment  = document.createDocumentFragment()
     const fragment2 = document.createDocumentFragment()
     const fragment3 = document.createDocumentFragment()
     
-    data.forEach(producto => {
+    data.forEach((producto) => {
         producto.cantidad = 10 
         let estado = producto.estado
+        
         if(estado == 1){
-            
-           const template3 = template.content.querySelector('#imgUnidad1')
-           template3.querySelector('.vinoTitle').textContent = producto.title
-           template3.querySelector('.contPrecio').textContent = producto.precio
-           template3.querySelector('.selectores #dato4').textContent = producto.cantidad
-           template3.querySelector('.selectores #siguiente4').dataset.id= producto.id
-           template3.querySelector('.selectores #anterior4').dataset.id= producto.id
-           template3.querySelector('button').dataset.id= producto.id
-           const clone = template3.cloneNode(true)
+
+           const template_unidades = template.querySelector('#imgUnidad1')
+           template_unidades.querySelector('.vinoTitle').textContent = producto.title
+           template_unidades.querySelector('.contPrecio').textContent = producto.precio
+           template_unidades.querySelector('.selectores #dato4').textContent = producto.cantidad
+           template_unidades.querySelector('.selectores #siguiente4').dataset.id= producto.id
+           template_unidades.querySelector('.selectores #anterior4').dataset.id= producto.id
+           template_unidades.querySelector('button').dataset.id= producto.id
+           const clone = template_unidades.cloneNode(true)
            fragment.appendChild(clone)
            //console.log(producto.cantidad)
            
-           
         }
-     else if (estado==2){
-            //template3.querySelector('#idcuadro2').setAttribute('src', producto.thumbnailUrl)
-            const template3 = template.content.querySelector('#imgUnidad5')
-            template3.querySelector('.vinoTitle').textContent = producto.title
-           template3.querySelector('.contPrecio').textContent = producto.precio
-           template3.querySelector('.selectores #dato4').textContent = producto.cantidad
-           template3.querySelector('.selectores #siguiente4').dataset.id= producto.id
-           template3.querySelector('.selectores #anterior4').dataset.id= producto.id
-           template3.querySelector('button').dataset.id= producto.id
 
-            const clone2 = template3.cloneNode(true)
+        else if (estado == 2){
+            //template3.querySelector('#idcuadro2').setAttribute('src', producto.thumbnailUrl)
+            const template_paquetes = template.querySelector('#imgUnidad5')
+            template_paquetes.querySelector('.vinoTitle').textContent = producto.title
+            template_paquetes.querySelector('.contPrecio').textContent = producto.precio
+            template_paquetes.querySelector('.selectores #dato4').textContent = producto.cantidad
+            template_paquetes.querySelector('.selectores #siguiente4').dataset.id= producto.id
+            template_paquetes.querySelector('.selectores #anterior4').dataset.id= producto.id
+            template_paquetes.querySelector('button').dataset.id= producto.id
+
+            const clone2 = template_paquetes.cloneNode(true)
             fragment2.appendChild(clone2)
         }
         
-        else if (estado==3){
+        else if (estado == 3){
             //template3.querySelector('#idcuadro2').setAttribute('src', producto.thumbnailUrl)
-            const template3 = template.content.querySelector('#imgUnidad9')
-            template3.querySelector('.vinoTitle').textContent = producto.title
-           template3.querySelector('.contPrecio').textContent = producto.precio
-           template3.querySelector('.selectores #dato4').textContent = producto.cantidad
-           template3.querySelector('.selectores #siguiente4').dataset.id= producto.id
-           template3.querySelector('.selectores #anterior4').dataset.id= producto.id
-           template3.querySelector('button').dataset.id= producto.id
+            const template_galones = template.querySelector('#imgUnidad9')
+            template_galones.querySelector('.vinoTitle').textContent = producto.title
+            template_galones.querySelector('.contPrecio').textContent = producto.precio
+            template_galones.querySelector('.selectores #dato4').textContent = producto.cantidad
+            template_galones.querySelector('.selectores #siguiente4').dataset.id= producto.id
+            template_galones.querySelector('.selectores #anterior4').dataset.id= producto.id
+            template_galones.querySelector('button').dataset.id= producto.id
 
-            const clone3 = template3.cloneNode(true)
+            const clone3 = template_galones.cloneNode(true)
             fragment3.appendChild(clone3)
         }
-        
         
     });
     
@@ -118,8 +118,8 @@ const PintarProductos = (data)=>{
 const detectarBotones = (data) => {
     const botones = document.querySelectorAll('.containerSectionCuadroBase #btnGuardarVinos')
     //console.log(botones)
-    botones.forEach(btn => {
-        btn.addEventListener('click', ()=>{
+    botones.forEach( btn => {
+        btn.addEventListener('click', () =>{
             // find devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
             const producto = data.find(item => item.id === parseInt(btn.dataset.id))
             //console.log(producto)
